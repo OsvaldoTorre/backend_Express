@@ -1,3 +1,0 @@
-
-let correo
-let contrasena
