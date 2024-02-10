@@ -44,11 +44,6 @@ CREATE TABLE `servicio` (
   FOREIGN KEY (`idCategoria`) REFERENCES `categoria`(`idCategoria`)
 );
 
-CREATE TABLE `usuario` (
-  `correo` VARCHAR(254) PRIMARY KEY,
-  `contrasena` VARCHAR(64)
-);
-
 CREATE TABLE `tamanoEvento` (
   `idTamEvento` VARCHAR(64) PRIMARY KEY,
   `nombre` VARCHAR(64)
