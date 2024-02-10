@@ -43,3 +43,5 @@ class Cliente {
         return `Cliente { idCorreo: ${this.idCorreo}, nombre: ${this.nombre}, apellidoPaterno: ${this.apellidoPaterno}, apellidoMaterno: ${this.apellidoMaterno} }`;
     }
 }
+
+module.exports = Cliente;
