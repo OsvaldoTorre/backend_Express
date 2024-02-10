@@ -7,31 +7,31 @@ class Proveedor {
     }
 
     // Getters y setters
-    get idProveedor() {
+    getidProveedor() {
         return this._idProveedor;
     }
-    set idProveedor(value) {
+    setidProveedor(value) {
         this._idProveedor = value;
     }
 
-    get nombre() {
+    getnombre() {
         return this._nombre;
     }
-    set nombre(value) {
+    setnombre(value) {
         this._nombre = value;
     }
 
-    get apellidoPaterno() {
+    getapellidoPaterno() {
         return this._apellidoPaterno;
     }
-    set apellidoPaterno(value) {
+    setapellidoPaterno(value) {
         this._apellidoPaterno = value;
     }
 
-    get apellidoMaterno() {
+    getapellidoMaterno() {
         return this._apellidoMaterno;
     }
-    set apellidoMaterno(value) {
+    setapellidoMaterno(value) {
         this._apellidoMaterno = value;
     }
 

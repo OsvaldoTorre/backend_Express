@@ -8,45 +8,45 @@ class Pedido {
       this._hora = hora;
     }
   
-    get idPedido() {
+    getidPedido() {
       return this._idPedido;
     }
-    set idPedido(value) {
+    setidPedido(value) {
       this._idPedido = value;
     }
   
-    get idCorreo() {
+    getidCorreo() {
       return this._idCorreo;
     }
-    set idCorreo(value) {
+    setidCorreo(value) {
       this._idCorreo = value;
     }
   
-    get idServicio() {
+    getidServicio() {
       return this._idServicio;
     }
-    set idServicio(value) {
+    setidServicio(value) {
       this._idServicio = value;
     }
   
-    get direccion() {
+    getdireccion() {
       return this._direccion;
     }
-    set direccion(value) {
+    setdireccion(value) {
       this._direccion = value;
     }
   
-    get fecha() {
+    getfecha() {
       return this._fecha;
     }
-    set fecha(value) {
+    setfecha(value) {
       this._fecha = value;
     }
   
-    get hora() {
+    gethora() {
       return this._hora;
     }
-    set hora(value) {
+    sethora(value) {
       this._hora = value;
     }
   

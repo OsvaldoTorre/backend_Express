@@ -14,80 +14,80 @@ class Servicio {
     }
 
     // Getters y setters
-    get idServicio() {
+    getidServicio() {
         return this._idServicio;
     }
-    set idServicio(value) {
+    setidServicio(value) {
         this._idServicio = value;
     }
 
-    get idProveedor() {
+    getidProveedor() {
         return this._idProveedor;
     }
-    set idProveedor(value) {
+    setidProveedor(value) {
         this._idProveedor = value;
     }
 
-    get idCategoria() {
+    getidCategoria() {
         return this._idCategoria;
     }
-    set idCategoria(value) {
+    setidCategoria(value) {
         this._idCategoria = value;
     }
 
-    get idTamEvento() {
+    getidTamEvento() {
         return this._idTamEvento;
     }
-    set idTamEvento(value) {
+    setidTamEvento(value) {
         this._idTamEvento = value;
     }
 
-    get descripcion() {
+    getdescripcion() {
         return this._descripcion;
     }
-    set descripcion(value) {
+    setdescripcion(value) {
         this._descripcion = value;
     }
 
-    get imgRuta() {
+    getimgRuta() {
         return this._imgRuta;
     }
-    set imgRuta(value) {
+    setimgRuta(value) {
         this._imgRuta = value;
     }
 
-    get nombre() {
+    getnombre() {
         return this._nombre;
     }
-    set nombre(value) {
+    setnombre(value) {
         this._nombre = value;
     }
 
-    get costo() {
+    getcosto() {
         return this._costo;
     }
-    set costo(value) {
+    setcosto(value) {
         this._costo = value;
     }
 
-    get puntuacion() {
+    getpuntuacion() {
         return this._puntuacion;
     }
-    set puntuacion(value) {
+    setpuntuacion(value) {
         this._puntuacion = value;
     }
 
-    get ubicacion() {
+    getubicacion() {
         return this._ubicacion;
     }
-    set ubicacion(value) {
+    setubicacion(value) {
         this._ubicacion = value;
     }
 
-    get disponibilidad() {
+    getdisponibilidad() {
         return this._disponibilidad;
     }
-    set disponibilidad(value) {
+    setdisponibilidad(value) {
         this._disponibilidad = value;
     }
 

@@ -5,17 +5,17 @@ class Categoria {
     }
 
     // Getters y setters
-    get idCategoria() {
+    getidCategoria() {
         return this._idCategoria;
     }
-    set idCategoria(value) {
+    setidCategoria(value) {
         this._idCategoria = value;
     }
 
-    get nombre() {
+    getnombre() {
         return this._nombre;
     }
-    set nombre(value) {
+    setnombre(value) {
         this._nombre = value;
     }
 
