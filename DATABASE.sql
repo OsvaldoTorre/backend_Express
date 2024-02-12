@@ -2,7 +2,8 @@ CREATE TABLE `cliente` (
   `idCorreo` VARCHAR(254) PRIMARY KEY,
   `nombre` VARCHAR(64),
   `apellidoPaterno` VARCHAR(64),
-  `apellidoMaterno` VARCHAR(64)
+  `apellidoMaterno` VARCHAR(64),
+  `activo` BOOLEAN
 );
 
 CREATE TABLE `pedido` (
@@ -25,7 +26,8 @@ CREATE TABLE `proveedor` (
   `idProveedor` VARCHAR(64) PRIMARY KEY,
   `nombre` VARCHAR(64),
   `apellidoPaterno` VARCHAR(64),
-  `apellidoMaterno` VARCHAR(64)
+  `apellidoMaterno` VARCHAR(64),
+  `activo` BOOLEAN
 );
 
 CREATE TABLE `servicio` (
@@ -40,6 +42,7 @@ CREATE TABLE `servicio` (
   `puntuacion` DECIMAL(3,2),
   `ubicacion` VARCHAR(255),
   `disponibilidad` BOOLEAN,
+  `activo` BOOLEAN
   FOREIGN KEY (`idProveedor`) REFERENCES `proveedor`(`idProveedor`),
   FOREIGN KEY (`idCategoria`) REFERENCES `categoria`(`idCategoria`)
 );
