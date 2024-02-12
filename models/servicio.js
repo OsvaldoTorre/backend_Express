@@ -1,5 +1,5 @@
 class Servicio {
-    constructor(idServicio, idProveedor, idCategoria, idTamEvento, descripcion, imgRuta, nombre, costo, puntuacion, ubicacion, disponibilidad) {
+    constructor(idServicio, idProveedor, idCategoria, idTamEvento, descripcion, imgRuta, nombre, costo, puntuacion, ubicacion, disponibilidad, activo) {
         this._idServicio = idServicio;
         this._idProveedor = idProveedor;
         this._idCategoria = idCategoria;
@@ -11,6 +11,7 @@ class Servicio {
         this._puntuacion = puntuacion;
         this._ubicacion = ubicacion;
         this._disponibilidad = disponibilidad;
+        this._activo = activo;
     }
 
     // Getters y setters
@@ -91,9 +92,17 @@ class Servicio {
         this._disponibilidad = value;
     }
 
+    getactivo(){
+        return this._activo;
+    }
+
+    setactivo(value){
+        this._activo = value;
+    }
+
     // Método toString
     toString() {
-        return `Servicio { idServicio: ${this._idServicio}, idProveedor: ${this._idProveedor}, idCategoria: ${this._idCategoria}, nombre: ${this._nombre}, costo: ${this._costo}, puntuacion: ${this._puntuacion}, ubicacion: ${this._ubicacion}, disponibilidad: ${this._disponibilidad} }`;
+        return `Servicio { idServicio: ${this._idServicio}, idProveedor: ${this._idProveedor}, idCategoria: ${this._idCategoria}, nombre: ${this._nombre}, costo: ${this._costo}, puntuacion: ${this._puntuacion}, ubicacion: ${this._ubicacion}, disponibilidad: ${this._disponibilidad}, activo: ${this._activo} }`;
     }
 }
 

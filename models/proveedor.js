@@ -1,9 +1,11 @@
 class Proveedor {
-    constructor(idProveedor, nombre, apellidoPaterno, apellidoMaterno) {
+    constructor(idProveedor, nombre, apellidoPaterno, apellidoMaterno, activo) {
         this._idProveedor = idProveedor;
         this._nombre = nombre;
         this._apellidoPaterno = apellidoPaterno;
         this._apellidoMaterno = apellidoMaterno;
+        this._activo = activo;
+        
     }
 
     // Getters y setters
@@ -35,9 +37,17 @@ class Proveedor {
         this._apellidoMaterno = value;
     }
 
+    getactivo(){
+        return this._activo;
+    }
+
+    setactivo(value){
+        this._activo = value;
+    }
+
     // Método toString
     toString() {
-        return `Proveedor { idProveedor: ${this._idProveedor}, nombre: ${this._nombre}, apellidoPaterno: ${this._apellidoPaterno}, apellidoMaterno: ${this._apellidoMaterno} }`;
+        return `Proveedor { idProveedor: ${this._idProveedor}, nombre: ${this._nombre}, apellidoPaterno: ${this._apellidoPaterno}, apellidoMaterno: ${this._apellidoMaterno}, activo: ${this._activo }`;
     }
 }
 

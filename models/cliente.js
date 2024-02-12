@@ -1,10 +1,11 @@
 class Cliente {
 
-    constructor(idCorreo, nombre, apellidoPaterno, apellidoMaterno) {
+    constructor(idCorreo, nombre, apellidoPaterno, apellidoMaterno, activo) {
         this.idCorreo = idCorreo;
         this.nombre = nombre;
         this.apellidoPaterno = apellidoPaterno;
         this.apellidoMaterno = apellidoMaterno;
+        this.activo = activo;
     }
 
     getIdCorreo() {
@@ -39,8 +40,16 @@ class Cliente {
         this.apellidoMaterno = apellidoMaterno;
     }
 
+    getactivo(){
+        return this.activo;
+    }
+
+    setactivo(value){
+        this.activo = value;
+    }
+
     toString() {
-        return `Cliente { idCorreo: ${this.idCorreo}, nombre: ${this.nombre}, apellidoPaterno: ${this.apellidoPaterno}, apellidoMaterno: ${this.apellidoMaterno} }`;
+        return `Cliente { idCorreo: ${this.idCorreo}, nombre: ${this.nombre}, apellidoPaterno: ${this.apellidoPaterno}, apellidoMaterno: ${this.apellidoMaterno}, activo: ${this.activo} }`;
     }
 }
 
